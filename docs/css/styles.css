@@ -2915,3 +2915,50 @@ width:100%;display:flex;flex-direction:column;align-items:center;gap:12px;margin
 .menu-actions{
   display: none;
 }
+footer {
+  background: #112433;
+  color: #fff;
+  padding: 2rem;
+}
+
+footer a {
+  color: #FFCB2E;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column; /* por defecto en mobile */
+  align-items: center;
+  text-align: center;
+}
+
+.footer-right {
+  margin-top: 1rem;
+}
+
+.social-icons {
+  margin-top: 0.5rem;
+}
+
+.social-icons img {
+  width: 24px;
+  margin: 0 0.3rem;
+  vertical-align: middle;
+}
+
+/* Para pantallas mayores a 768px */
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row; /* lado a lado */
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer-right {
+    margin-top: 0;
+    text-align: right; /* de derecha a izquierda */
+  }
+}
